@@ -1,8 +1,9 @@
 Installation to disk is disabled, so the supported methods are running it as a Live USB or through a VM.
+Warning: If run through a VM, there may be no persistent storage for the live session, so data should be kept on the VM's virtual disk or on the host system.
 
 Building
 ============
-Ubuntu system (Tested)
+Ubuntu System (Tested)
 1) Download the latest Ubuntu 14.04 LTS image:
 wget http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-desktop-amd64.iso
 2) Install Ubuntu Customisation Kit
