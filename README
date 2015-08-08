@@ -1,5 +1,5 @@
 Installation to disk is disabled, so the supported methods are running it as a Live USB or through a VM.
-Warning: If run through a VM, there may be no persistent storage for the live session, so data should be kept on the VM's virtual disk or on the host system.
+Warning: If run through a VM, there will be no persistent storage in the live session, so persistent data should be kept on the VM's virtual disk or on the host system.
 
 Building
 ============
@@ -20,11 +20,11 @@ Installation
 Live USB
 --------
 Ubuntu System (Tested)
-1) Format USB with the FAT filesystem.
-2) Open Startup Disk Creator.
-3) Select image and USB drive. Choose whether persistent storage will be used.
-4) Select "Make Startup Disk".
-5) Give sudo password when requested.
+1) Format USB with the FAT filesystem
+2) Open Startup Disk Creator
+3) Select image, USB drive, and whether persistent storage will be used
+4) Select "Make Startup Disk"
+5) Give sudo password when requested
 
 Windows
 http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows
