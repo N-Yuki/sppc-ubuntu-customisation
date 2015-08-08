@@ -1,0 +1,36 @@
+Installation to disk is disabled, so the supported methods are running it as a Live USB or through a VM.
+
+Building
+============
+Ubuntu system (Tested)
+1) Download the latest Ubuntu 14.04 LTS image:
+wget http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-desktop-amd64.iso
+2) Install Ubuntu Customisation Kit
+sudo apt-get install uck
+3) Run UCK
+uck
+4) Follow prompts and when asked whether you want to run a terminal application, select yes
+5) Copy and run the "setup" script within the customisation terminal (ie. in the chroot)
+6) Exit the UCK customisation terminal when ready
+7) The new ISO image will be built in: ~/tmp/remaster-new-files/livecd.iso
+
+Installation
+============
+Live USB
+--------
+Ubuntu System (Tested)
+1) Format USB with the FAT filesystem.
+2) Open Startup Disk Creator.
+3) Select image and USB drive. Choose whether persistent storage will be used.
+4) Select "Make Startup Disk".
+5) Give sudo password when requested.
+
+Windows
+http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows
+
+Others
+https://help.ubuntu.com/community/Installation/FromUSBStick
+
+VM
+--------
+http://www.wikihow.com/Install-Ubuntu-on-VirtualBox
