@@ -82,7 +82,7 @@ Name=Language References
 Type=Link
 URL=http://domserver.cosc.canterbury.ac.nz/contestantdocs/
 Icon=text-html
-EOF_BACKUPSERVER
+EOF_DOCURL
 cat << EOF_SAMPLEDATA > /usr/share/example-content/Sample_Data.html
 <!DOCTYPE HTML>
 <html>
