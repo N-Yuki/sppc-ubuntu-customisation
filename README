@@ -11,7 +11,7 @@ sudo apt-get install uck
 3) Run UCK
 uck
 4) Follow prompts and when asked whether you want to run a console application or continue building, select to run a console application
-5) Copy and run the "setup" script within the customisation terminal (ie. in the chroot)
+5) Copy and modify the "setup" script as necessary before running it within the customisation terminal (ie. in the chroot)
 6) Exit the UCK customisation terminal when ready
 7) The new ISO image will be built in: ~/tmp/remaster-new-files/livecd.iso
 
