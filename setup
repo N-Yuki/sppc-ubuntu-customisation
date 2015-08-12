@@ -35,6 +35,8 @@ COMMIT
 EOF_IPTABLERULES
 
 # Setup printers
+# THIS IS A TEST CONFIGURATION FILE FOR PRINTING AT UWA
+# PLEASE MODIFY THIS
 cat << EOF_PRINTER > /etc/cups/printers.conf
 # Printer configuration file for CUPS v1.7.2
 # Written by cupsd
