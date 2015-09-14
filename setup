@@ -1,14 +1,12 @@
 #!/bin/bash
 
 # Install and remove packages
-dpkg-divert --local --add /etc/init.d/systemd-logind
-ln -s /bin/true /etc/init.d/systemd-logind
 add-apt-repository -y ppa:webupd8team/sublime-text-3
 sed -i 's/ main / main universe multiverse /g' /etc/apt/sources.list
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | tee /etc/apt/sources.list.d/mono-xamarin.list
 apt-get update
-apt-get -y install build-essential vim vim-gtk emacs sublime-text-installer idle-python2.7 idle-python3.4 eclipse eclipse-cdt-valgrind monodevelop gedit-developer-plugins gedit-plugins anjuta-extras geany-plugins clang-3.5
+apt-get -y install build-essential vim vim-gtk emacs sublime-text-installer idle-python2.7 idle-python3.4 eclipse eclipse-cdt-valgrind monodevelop gedit-developer-plugins gedit-plugins anjuta-extras geany-plugins clang-3.5 virtualbox-guest-dkms virtualbox-guest-x11
 apt-get -y purge thunderbird libreoffice-core empathy rhythmbox shotwell transmission-gtk simple-scan aisleriot gnome-sudoku gnome-mahjongg gnomine unity-webapps-common software-center landscape-client-ui-install unity-control-center-signon ubiquity gparted remmina
 apt-get -y autoremove
 apt-get -y upgrade
