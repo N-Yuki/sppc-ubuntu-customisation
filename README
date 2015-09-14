@@ -4,13 +4,25 @@ Warning: If run through a VM, there will be no persistent storage in the live se
 Building
 ============
 Ubuntu System (Tested)
-1) Download the latest Ubuntu 14.04 LTS image:
+1) Download or copy the latest Ubuntu 14.04 LTS image to the Ubuntu system:
 wget http://releases.ubuntu.com/14.04.3/ubuntu-14.04.3-desktop-amd64.iso
 2) Install Ubuntu Customisation Kit
 sudo apt-get install uck
 3) Run UCK
-uck
-4) Follow prompts and when asked whether you want to run a console application or continue building, select to run a console application
+uck-gui
+4) Follow prompts and when asked whether you want to run a console application or continue building, select to run console application:
+- Select OK
+- Select 'en' only
+- Select 'en' only
+- Select 'en' for boot language
+- Select 'unity' only
+- Select ubuntu-14.04.3-desktop-amd64.iso
+- Name image. For example, "SPPC Ubuntu 14.04.3 Live Image"
+- Select 'yes'
+- Select 'yes' or 'no'
+- Select 'yes'
+- Select OK
+- Choose 'run console application'
 5) Copy and modify the "setup" script as necessary before running it within the customisation terminal (ie. in the chroot)
 6) Exit the UCK customisation terminal when ready
 7) The new ISO image will be built in: ~/tmp/remaster-new-files/livecd.iso
