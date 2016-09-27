@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Update package list
+# Add repositories
+add-apt-repository -y ppa:webupd8team/sublime-text-3
+add-apt-repository -y ppa:webupd8team/java
+sed -i 's/ main restricted/ main universe multiverse restricted/g' /etc/apt/sources.list
+# Remove packages
+apt-get -y purge aisleriot brasero cheese empathy friends gnome-mahjongg gnome-mines gnome-sudoku gparted landscape-client-ui-install libreoffice-core remmina rhythmbox shotwell simple-scan software-center thunderbird totem transmission-gtk ubiquity unity-control-center-signon unity-webapps-service
+# Install packages
+apt-get update && apt-get -y upgrade
+apt-get -y install build-essential vim-gtk emacs sublime-text-installer idle-python3.4 eclipse eclipse-cdt-valgrind gedit-developer-plugins gedit-plugins anjuta-extras geany-plugins clang-3.5
+apt-get -y install oracle-java8-installer oracle-java8-set-default
+# Finalise package list
+apt-get -y autoremove && apt-get -y autoclean
