@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# Set Firefox homepage to http://domserver.cosc.canterbury.ac.nz/domjudge/team/
+# Set Firefox homepage to http://domserver.cosc.canterbury.ac.nz/public/
 cat << EOF_FIREPREFS > /usr/lib/firefox/defaults/pref/all.corp.js
 lockPref("browser.startup.homepage","http://domserver.cosc.canterbury.ac.nz/public/");
 EOF_FIREPREFS
+
+# In case, the DNS fails, set hosts
+cat << EOF_HOSTS >> /etc/hosts
+132.181.7.114	domserver.cosc.canterbury.ac.nz
+EOF_HOSTS
 
 # Setup IPTABLES to block all internet traffic, except the DOMJudge servers and IP printers
 iptables -F
